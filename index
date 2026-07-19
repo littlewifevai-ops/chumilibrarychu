@@ -2,19 +2,66 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chumi's Library</title>
+
+    <title>Chu's Personal Library</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <h1>📚 Chumi's Library</h1>
-    <p>Welcome to my digital bookshelf.</p>
+<section class="hero">
 
-    <script src="script.js"></script>
+    <div class="overlay">
+
+        <h1>📚 Chu's Personal Library</h1>
+
+        <p>
+            My collection of novels and books I have been reading online.
+        </p>
+
+        <a href="#showcase" class="button">
+            Explore Library
+        </a>
+
+    </div>
+
+</section>
+
+<section id="showcase">
+
+    <h2>Recently Added</h2>
+
+    <div class="slider">
+
+        <img src="images/covers/tgcf.jpg">
+
+        <img src="images/covers/little-mushroom.jpg">
+
+        <img src="images/covers/qjj.jpg">
+
+        <img src="images/covers/tgcf.jpg">
+
+        <img src="images/covers/little-mushroom.jpg">
+
+        <img src="images/covers/qjj.jpg">
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 

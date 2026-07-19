@@ -1,5 +1,3 @@
-# Chumi
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -157,7 +155,7 @@ footer{
 
 <header>
 
-<h1>📚 Chumi's Library</h1>
+<h1>Chumi's Library</h1>
 
 <p>My collection of novels and books I have been reading online.</p>
 

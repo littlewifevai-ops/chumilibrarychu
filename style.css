@@ -9,13 +9,10 @@ html{
 }
 
 body{
-
-    font-family:'Quicksand',sans-serif;
-
-    background:#FFF8FC;
-
-    overflow-x:hidden;
-
+font-family: 'Ranade', sans-serif;
+font-color: #000000;
+background:#FFF8FC;
+overflow-x:hidden;
 }
 
 /* HERO */

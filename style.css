@@ -142,15 +142,7 @@ color:#E96BA8;
 .flower{
     font-size:24px;
 }
-.categories{
-    padding:90px 8%;
-    background:#FFF8FC;
-}
-.categories h2{
-    text-align:center;
-    margin-bottom:40px;
-    color:#E96BA8;
-}
+
 .grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);

@@ -244,3 +244,14 @@ color:#E96BA8;
     color:#555;
     font-weight:600;
 }
+@keyframes mcScroll{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(-50%);
+    }
+
+}

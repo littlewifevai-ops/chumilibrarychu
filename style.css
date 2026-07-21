@@ -268,7 +268,7 @@ color:#E96BA8;
 
     gap:25px;
 
-    align-items:start;
+    align-items:stretch;
 
 }
 .right-panel{
@@ -284,11 +284,11 @@ color:#E96BA8;
 
     display:grid;
 
-    grid-template-columns:320px 220px;
+    grid-template-columns:1fr 1fr;
 
     gap:20px;
 
-    align-items:start;
+    align-items:stretch;
 
 }
 .other-panel{
@@ -298,6 +298,8 @@ color:#E96BA8;
     border-radius:20px;
 
     padding:25px;
+
+    min-height:420px;
 
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
@@ -344,6 +346,8 @@ color:#E96BA8;
 
     overflow:hidden;
 
+    min-height:205px;
+
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
 }
@@ -367,10 +371,11 @@ color:#E96BA8;
 
     padding:25px;
 
+    min-height:650px;
+
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
 }
-
 .category-panel h3{
 
     color:#E96BA8;
@@ -421,6 +426,8 @@ color:#E96BA8;
     border-radius:20px;
 
     overflow:hidden;
+
+    min-height:420px;
 
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
@@ -485,6 +492,8 @@ color:#E96BA8;
     border-radius:20px;
 
     padding:25px;
+
+    min-height:650px;
 
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 

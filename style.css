@@ -445,3 +445,132 @@ color:#E96BA8;
     display:block;
 }
 
+/* Favorites */
+
+.favorite-panel{
+
+    width:100%;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.favorite-tabs{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:30px 0;
+
+}
+
+.tab{
+
+    border:none;
+
+    background:#FFE7F2;
+
+    color:#E96BA8;
+
+    padding:12px 28px;
+
+    border-radius:3px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.tab:hover{
+
+    background:#FFD2E7;
+
+}
+
+.tab.active{
+
+    background:#E96BA8;
+
+    color:white;
+
+}
+.book{
+
+    text-align:center;
+
+}
+
+.book img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+.book img:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.book p{
+
+    margin-top:12px;
+
+}
+
+.tab-content{
+    display:none;
+}
+
+.tab-content.active{
+    display:block;
+}
+.favorite-years{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.year{
+    padding:10px 15px;
+    border:none;
+    border-radius:2px;
+    background:#FFE8F3;
+    cursor:pointer;
+    transition:.1s;
+    color: #E96BA8;
+    font-weight: 520;
+}
+
+.year:hover{
+    background:#FFE8F3;
+}
+
+.year.active{
+    background:#E96BA8;
+    color:white;
+}
+
+.year-content{
+    display:none;
+}
+
+.year-content.active{
+    display:block;
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chu Library</title>
@@ -8,238 +8,388 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<nav class="navbar">
-    <div class="logo">
-    <span class="flower">✿</span>
-    Cutie's Petals and Pages
-</div>
-    <ul class="menu">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="flower">✿</span>
+        Cutie's Petals and Pages
+      </div>
+      <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Library Best</a></li>
         <li><a href="#">Bookshelf</a></li>
         <li><a href="#">Reviews</a></li>
         <li><a href="#">About</a></li>
-    </ul>
-</nav>
-<section class="hero">
-    <div class="overlay">
-
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="overlay">
         <h1 class="flower"> ✿ Hello Cutie ✿</h1>
         <p>Every book here marks a chapter of my reading journey. Welcome to my personal library.
         </p>
         <a href="#showcase" class="button">
-            Explore Library
+        Explore Library
         </a>
-    </div>
-</section>
-<section id="showcase">
-    <h2>Thousand Years Favorite</h2>
-    <div class="slider">
-        <img src="images/covers/LiJing.png">
- <img src="images/covers/XieWucheng.png">
-        <img src="images/covers/Fu Yuting.png">
-        <img src="images/covers/Lu Changge.png">
-        <img src="images/covers/Bai Gong.png">
-        <img src="images/covers/Jifeng.png">
-    </div>
-</section>
+      </div>
+    </section>
+    <section class="secondpage">
+      <!-- ======================= -->
+      <!-- THOUSAND YEARS -->
+      <!-- ======================= -->
+      <div id="thousand" class="year-content active">
+        <section class="favorite-panel">
+          <div class="favorite-years">
+            <button class="year active"
+              onclick="changeYear('thousand', this)">
+            Thousand Years Favorite
+            </button>
+            <button class="year"
+              onclick="changeYear('hundred', this)">
+            Hundred Years Favorite
+            </button>
+            <button class="year"
+              onclick="changeYear('ten', this)">
+            Recent Obsession
+            </button>
+            <button class="year"
+              onclick="changeYear('thousand', this)">
+            Currently Reading
+            </button>
+            <button class="year"
+              onclick="changeYear('hundred', this)">
+            Comfort Reads
+            </button>
+            <button class="year"
+              onclick="changeYear('hundred', this)">
+            Waiting for Updates
+            </button>
+            <button class="year"
+              onclick="changeYear('ten', this)">
+            Worth Re-reading
+            </button>
+            <button class="year"
+              onclick="changeYear('hundred', this)">
+            Emotional Damage
+            </button>
+            <button class="year"
+              onclick="changeYear('ten', this)">
+            Dropped
+            </button>
+          </div>
 
-<section class="library-section">
-
-    <h2 class="section-title">Top Library</h2>
-
-    <div class="library-grid">
-
+          <h2 id="favoriteTitle">
+            Thousand Years Favorite
+          </h2>
+          <!-- Genre Tabs -->
+          <div class="favorite-tabs">
+            <button class="tab active" onclick="showTab('primitive', this)">
+            Ancient Times
+            </button>
+            <button class="tab" onclick="showTab('historical', this)">
+            Interstellar
+            </button>
+            <button class="tab" onclick="showTab('scifi', this)">
+            Sci-Fi
+            </button>
+            <button class="tab" onclick="showTab('modern', this)">
+            Apocalypse
+            </button>
+             <button class="tab active" onclick="showTab('primitive', this)">
+            Ancient Times
+            </button>
+            <button class="tab" onclick="showTab('historical', this)">
+            Interstellar
+            </button>
+            <button class="tab" onclick="showTab('scifi', this)">
+            Sci-Fi
+            </button>
+            <button class="tab" onclick="showTab('modern', this)">
+            Apocalypse
+            </button>
+          </div>
+          <!-- Primitive -->
+          <div id="primitive" class="tab-content active">
+            <div class="slider">
+              <img src="images/covers/LiJing.png">
+              <img src="images/covers/XieWucheng.png">
+              <img src="images/covers/Fu Yuting.png">
+              <img src="images/covers/Lu Changge.png">
+              <img src="images/covers/Bai Gong.png">
+              <img src="images/covers/Jifeng.png">
+            </div>
+          </div>
+          <!-- Historical -->
+          <div id="historical" class="tab-content">
+            <div class="slider">
+              <img src="images/covers/LiJing.png">
+              <img src="images/covers/XieWucheng.png">
+              <img src="images/covers/Fu Yuting.png">
+              <img src="images/covers/Lu Changge.png">
+              <img src="images/covers/Bai Gong.png">
+              <img src="images/covers/Jifeng.png">
+            </div>
+          </div>
+          <!-- Sci-Fi -->
+          <div id="scifi" class="tab-content">
+            <div class="slider">
+              <img src="images/covers/LiJing.png">
+              <img src="images/covers/XieWucheng.png">
+              <img src="images/covers/Fu Yuting.png">
+              <img src="images/covers/Lu Changge.png">
+              <img src="images/covers/Bai Gong.png">
+              <img src="images/covers/Jifeng.png">
+            </div>
+          </div>
+          <!-- Modern -->
+          <div id="modern" class="tab-content">
+            <div class="slider">
+              <img src="images/covers/LiJing.png">
+              <img src="images/covers/XieWucheng.png">
+              <img src="images/covers/Fu Yuting.png">
+              <img src="images/covers/Lu Changge.png">
+              <img src="images/covers/Bai Gong.png">
+              <img src="images/covers/Jifeng.png">
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ======================= -->
+      <!-- HUNDRED YEARS -->
+      <!-- ======================= -->
+      <div id="hundred" class="year-content">
+        <section class="favorite-panel">
+          <h2>Hundred Years Favorite</h2>
+          <!-- Copy the same layout here -->
+          <p>Put your Hundred Years tabs and books here.</p>
+        </section>
+      </div>
+      <!-- ======================= -->
+      <!-- TEN YEARS -->
+      <!-- ======================= -->
+      <div id="ten" class="year-content">
+        <section class="favorite-panel">
+          <h2>Ten Years Favorite</h2>
+          <!-- Copy the same layout here -->
+          <p>Put your Ten Years tabs and books here.</p>
+        </section>
+      </div>
+    </section>
+    <section class="library-section">
+      <h2 class="section-title">Top Library</h2>
+      <div class="library-grid">
         <!-- LEFT COLUMN -->
         <div class="category-panel">
-
-            <h3>Genre</h3>
-
-            <ul>
-
-                <li class="active">Overlord Gong MC</li>
-                <li>Transmigration</li>
-                <li>Time Travel</li>
-                <li>Book Wearer</li>
-                <li>Farming</li>
-                <li>Zerg</li>
-                <li>Ancient Marquis</li>
-                <li>Emperor</li>
-                <li>System</li>
-                <li>Alpha ABO</li>
-                <li>Primitive</li>
-
-            </ul>
-
+          <h3>Genre</h3>
+          <ul>
+            <li class="active">Overlord Gong MC</li>
+            <li>Transmigration</li>
+            <li>Time Travel</li>
+            <li>Book Wearer</li>
+            
+            <li>Farming</li>
+            <li>Zerg</li>
+            <li>Ancient Marquis</li>
+            <li>Emperor</li>
+            <li>System</li>
+            <li>Alpha ABO</li>
+            <li>Primitive</li>
+          </ul>
         </div>
 
+        
         <!-- MIDDLE COLUMN -->
         <div class="novel-panel">
-
-            <h3>Top Recommendation</h3>
-
-            <ul>
-
-          <li onclick="showBaiGong()">Lu Changge</li>
-                <li>Bai Gong</li>
-                <li>Found a battle-damaged female insect</li>
-                <li>The cannon fodder who died young regains consciousness</li>
-                <li>Signing in to support a husband in a famine relief story</li>
-                <li>Life as a Married Couple with the Major General</li>
-
-            </ul>
-
+          <h3>Top Recommendation</h3>
+          <ul>
+            <li onclick="showBaiGong()">Lu Changge</li>
+            <li>Bai Gong</li>
+            <li>Found a battle-damaged female insect</li>
+            <li>The cannon fodder who died young regains consciousness</li>
+            <li>Signing in to support a husband in a famine relief story</li>
+            <li>Life as a Married Couple with the Major General</li>
+          </ul>
         </div>
-     <!-- RIGHT COLUMN -->
-<div class="right-panel">
-
-    <!-- TOP -->
-    <div class="right-top">
-
-        <!-- Selected Novel -->
-        <div class="preview-panel">
-
-            <img id="novelImage"
-            src="images/Gong/BaiGongMC.png" alt="Gong MC">
-
-            <div class="preview-content">
-
+        <!-- RIGHT COLUMN -->
+        <div class="right-panel">
+          <!-- TOP -->
+          <div class="right-top">
+            <!-- Selected Novel -->
+            <div class="preview-panel">
+              <img id="novelImage"
+                src="images/Gong/BaiGongMC.png" alt="Gong MC">
+              <div class="preview-content">
                 <h3 id="novelTitle">Bai Gong</h3>
-
                 <p id="novelDescription">
-                    A terrifying madman whose devotion knows no limits.
+                  A terrifying madman whose devotion knows no limits.
                 </p>
-
                 <a href="#" class="read-btn">
-                    View Library
+                View Library
                 </a>
-
+              </div>
             </div>
-
-        </div>
-
-        <!-- Other Novels -->
-        <div class="other-panel">
-
-            <h3>More Novels</h3>
-
-            <ul>
-
+            <!-- Other Novels -->
+            <div class="other-panel">
+              <h3>More Novels</h3>
+              <ul>
                 <li>Lu Changge</li>
                 <li>Cang Wu</li>
                 <li>Fang Yuan</li>
                 <li>Shen Jiu</li>
                 <li>Kael</li>
-
-            </ul>
-
+              </ul>
+            </div>
+          </div>
+          <!-- Bottom Banner -->
+          <div class="banner-panel">
+            <img
+              id="bannerImage"
+              src="images/Banner.png">
+          </div>
         </div>
-
-    </div>
-
-    <!-- Bottom Banner -->
-    <div class="banner-panel">
-
-        <img
-        id="bannerImage"
-        src="images/Banner.png">
-
-    </div>
-
-</div>
-
-    </div>
-
-</section>
-
-<section class="mc-gallery">
-
-    <h2>Overlord Gong MC</h2>
-
-    <div class="mc-slider">
+      </div>
+    </section>
+    <section class="mc-gallery">
+      <h2>Overlord Gong MC</h2>
+      <div class="mc-slider">
         <div class="mc-track">
-            <div class="mc-card">
-                <img src="images/Gong/BaiGongProfile.png" alt="Bai Gong">
-                <p>Bai Gong</p>
-            </div>
-            <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
- <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-             <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-            <!-- Duplicate for infinite scroll -->
-
-             <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-  <div class="mc-card">
-                <img src="images/chu.png" alt="chu">
-                <p>Waiting</p>
-            </div>
-
+          <div class="mc-card">
+            <img src="images/Gong/BaiGongProfile.png" alt="Bai Gong">
+            <p>Bai Gong</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <!-- Duplicate for infinite scroll -->
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
+          <div class="mc-card">
+            <img src="images/chu.png" alt="chu">
+            <p>Waiting</p>
+          </div>
         </div>
-
-    </div>
-
-</section>
-<script src="script.js"></script>
-<script>
-
-function showBaiGong(){
-
-    document.getElementById("novelImage").src =
-    "images/Gong/BaiGongMC.png";
-
-    document.getElementById("novelTitle").innerHTML =
-    "Bai Gong";
-
-    document.getElementById("novelDescription").innerHTML =
-    "A terrifying madman whose devotion knows no limits.";
-
-}
-
-</script>
-</body>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+      function showBaiGong(){
+      
+          document.getElementById("novelImage").src =
+          "images/Gong/BaiGongMC.png";
+      
+          document.getElementById("novelTitle").innerHTML =
+          "Bai Gong";
+      
+          document.getElementById("novelDescription").innerHTML =
+          "A terrifying madman whose devotion knows no limits.";
+      
+      }
+      
+      function showTab(tabName, button){
+      
+          document.querySelectorAll(".tab-content").forEach(tab=>{
+              tab.classList.remove("active");
+          });
+      
+          document.querySelectorAll(".tab").forEach(tab=>{
+              tab.classList.remove("active");
+          });
+      
+          document.getElementById(tabName).classList.add("active");
+      
+          button.classList.add("active");
+      }
+      
+      function changeYear(year, button){
+      
+          document.querySelectorAll(".year")
+          .forEach(btn=>btn.classList.remove("active"));
+      
+          button.classList.add("active");
+      
+          const title=document.getElementById("favoriteTitle");
+          const slider=document.getElementById("favoriteSlider");
+      
+          if(year==="thousand"){
+      
+              title.innerHTML="Thousand Years Favorite";
+      
+              slider.innerHTML=`
+                  <img src="images/covers/LiJing.png">
+                  <img src="images/covers/Lu Changge.png">
+                  <img src="images/covers/Bai Gong.png">
+              `;
+      
+          }
+      
+          else if(year==="hundred"){
+      
+              title.innerHTML="Hundred Years Favorite";
+      
+              slider.innerHTML=`
+                  <img src="images/covers/Jifeng.png">
+                  <img src="images/covers/Fu Yuting.png">
+                  <img src="images/covers/XieWucheng.png">
+              `;
+      
+          }
+      
+          else{
+      
+              title.innerHTML="Ten Years Favorite";
+      
+              slider.innerHTML=`
+                  <img src="images/covers/Bai Gong.png">
+                  <img src="images/covers/Jifeng.png">
+              `;
+      
+          }
+      
+      }
+      
+    </script>
+  </body>
 </html>

@@ -17,7 +17,7 @@ color:#E96BA8;
 
     background:
     linear-gradient(rgba(255,248,252,.35), rgba(255,248,252,.35)),
-    url("images/covers/Lu Changge.png");
+    url("");
 
     background-size:cover;
     background-position:center;
@@ -66,7 +66,7 @@ color:#E96BA8;
 
 /* SHOWCASE */
 #showcase{
-    padding:80px;
+    padding:20px;
     background:#FFF0F7;
 }
 
@@ -81,6 +81,7 @@ color:#E96BA8;
     overflow-x:auto;
     scroll-behavior:smooth;
     padding-bottom:15px;
+    
 }
 
 .slider img{
@@ -247,14 +248,14 @@ color:#E96BA8;
 =========================== */
 
 .library-section{
-    padding:90px 8%;
+    padding:40px 8%;
     background:#FFF8FC;
 }
 
 .section-title{
-    text-align:center;
+    text-align:Left;
     color:#E96BA8;
-    margin-bottom:50px;
+    margin-bottom:15px;
 }
 
 .library-grid{
@@ -402,13 +403,13 @@ color:#E96BA8;
 .other-panel{
     background:#fff;
     border-radius:20px;
-    padding:25px;
+    padding:15px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .other-panel h3{
     color:#E96BA8;
-    margin-bottom:18px;
+    margin-bottom:5px;
 }
 
 .other-panel ul{
@@ -416,9 +417,9 @@ color:#E96BA8;
 }
 
 .other-panel li{
-    padding:12px;
+    padding:2px;
     border-radius:10px;
-    margin-bottom:10px;
+    margin-bottom:2px;
     cursor:pointer;
     transition:.25s;
 }
@@ -448,27 +449,22 @@ color:#E96BA8;
 /* Favorites */
 
 .favorite-panel{
-
     width:100%;
-
     background:white;
-
     border-radius:15px;
-
-    padding:35px;
-
+    padding-top:15px;
+    padding-left:25px;
     box-shadow:0 12px 30px rgba(0,0,0,.08);
+    text-align: center;
 
 }
 
 .favorite-tabs{
-
     display:flex;
-
     gap:15px;
-
-    margin:30px 0;
-
+    margin:20px 0;
+    padding-top:0px;
+    padding-left:45px;
 }
 
 .tab{
@@ -540,6 +536,9 @@ color:#E96BA8;
 
 .tab-content.active{
     display:block;
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 .favorite-years{
     display:flex;
@@ -556,6 +555,7 @@ color:#E96BA8;
     transition:.1s;
     color: #E96BA8;
     font-weight: 520;
+
 }
 
 .year:hover{
@@ -573,4 +573,9 @@ color:#E96BA8;
 
 .year-content.active{
     display:block;
+}
+
+.year-selector {
+    padding-left: 25px;
+    padding-bottom: 15px;
 }
